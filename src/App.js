@@ -46,7 +46,7 @@ class App extends Component {
   }
 
   async getBalance() {
-    const balance = await this.state.tokenContract.methods.balanceOf(this.state.account).call()
+    const balance = await this.state.tokenContract.methods.balance(this.state.account).call()
     this.setState({ balance })
   }
 
